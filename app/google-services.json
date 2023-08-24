@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "95827551562",
+    "project_id": "anota-facil-26ac9",
+    "storage_bucket": "anota-facil-26ac9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95827551562:android:a8ee65132ebf6cf7854db3",
+        "android_client_info": {
+          "package_name": "com.alvaro.anotafacil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "95827551562-em2b87tvsr154nbmgv79h1md3o9phtgq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alvaro.anotafacil",
+            "certificate_hash": "9577152cd626a7e6e8203465243b109261eebee9"
+          }
+        },
+        {
+          "client_id": "95827551562-umvp9cuvf1uobkv5viian9p4du0gand5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPoUjemvYqPQ_DDHEET_UYkADqKIBwCaM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "95827551562-4vhgb9mneajuqajvaee3nel5bj8es3ut.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
