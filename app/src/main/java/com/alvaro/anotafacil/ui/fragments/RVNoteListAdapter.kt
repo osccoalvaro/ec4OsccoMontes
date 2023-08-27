@@ -35,7 +35,7 @@ class NoteVH(private val binding: ItemNoteBinding, val onNoteClick:(Note) -> Uni
             .load(note.Imagen)
             .into(binding.imgSimpson)
         binding.root.setOnClickListener {
-            // pasar a la siguiente pantalla
+            // Pasar a la siguiente pantalla
             onNoteClick(note)
         }
     }

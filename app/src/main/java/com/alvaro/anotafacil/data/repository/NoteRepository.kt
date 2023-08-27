@@ -35,13 +35,10 @@ class NoteRepository(val db: NotaDataBase? = null) {
         }
     }
 
-    //add
     suspend fun isNoteFavorite(noteId: String): Boolean {
         return withContext(Dispatchers.IO) {
             dao?.getNoteById(noteId) != null
         }
     }
-
-
 
 }

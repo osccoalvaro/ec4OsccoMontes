@@ -71,8 +71,6 @@
                     android:text="Stock"
                     android:textSize="15sp"
                     android:textStyle="italic" />
-
-
             </LinearLayout>
 
             <TextView
@@ -83,9 +81,7 @@
                 android:paddingBottom="1dp"
                 android:text="Categoria"
                 android:textSize="15sp" />
-
         </LinearLayout>
-
-
     </LinearLayout>
+
 </androidx.cardview.widget.CardView>

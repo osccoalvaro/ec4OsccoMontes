@@ -69,7 +69,6 @@
             android:maxLines="1" />
     </com.google.android.material.textfield.TextInputLayout>
 
-
     <Button
         android:id="@+id/btn_register_note"
         android:layout_width="330dp"
@@ -85,6 +84,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/til_ocupacion_simpson"
         app:layout_constraintVertical_bias="0.09" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

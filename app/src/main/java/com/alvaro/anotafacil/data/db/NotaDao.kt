@@ -14,7 +14,6 @@ interface NotaDao {
     @Query("SELECT * FROM nota4")
     suspend fun getFavorites() : List<Note>
 
-    //add
     @Query("SELECT * FROM nota4 WHERE _id = :noteId")
     fun getNoteById(noteId: String): Note?
 

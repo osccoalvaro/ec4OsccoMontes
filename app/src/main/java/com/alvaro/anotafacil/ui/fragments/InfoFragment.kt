@@ -28,6 +28,7 @@ class InfoFragment : Fragment() {
         val adapter = MyRecyclerViewAdapter(itemBinding)
         binding.rvFirestoreList.adapter = adapter
 
+        // Obtenemos los datos de Firestore y actualizamos el adaptador
         firestore.collection("simpson")
             .addSnapshotListener { snapshot, exception ->
                 if (exception != null) {
@@ -47,7 +48,6 @@ class InfoFragment : Fragment() {
                     }
                 }
             }
-
         return binding.root
     }
 

@@ -24,7 +24,6 @@ class AddNoteActivity : AppCompatActivity() {
             val Genero = binding.tilGeneroSimpson.editText?.text.toString()
             val Ocupacion = binding.tilOcupacionSimpson.editText?.text.toString()
 
-
             if (Nombre.isNotEmpty() && Genero.isNotEmpty() && Ocupacion.isNotEmpty()) {
                 addToFirestore(Nombre, Genero, Ocupacion)
             }

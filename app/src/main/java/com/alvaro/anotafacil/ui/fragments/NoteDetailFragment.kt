@@ -1,6 +1,5 @@
 package com.alvaro.anotafacil.ui.fragments
 
-import android.database.sqlite.SQLiteConstraintException
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -37,6 +36,7 @@ class NoteDetailFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
         super.onViewCreated(view, savedInstanceState)
         binding.txtTitle.text = note.Nombre
         binding.txtNote.text = note.Genero
@@ -53,13 +53,6 @@ class NoteDetailFragment : Fragment() {
             binding.btnAddFavorite.visibility = View.GONE
         }
 
-        /* binding.btnAddFavorite.setOnClickListener {
-            // agregar a favorito
-            note.isFavorite = true
-            viewModel.addFavorites(note)
-            Snackbar.make(binding.root, "Agregado a favoritos", Snackbar.LENGTH_SHORT).show()
-        } */
-
         binding.btnAddFavorite.setOnClickListener {
             if (!note.isFavorite) {
                 note.isFavorite = true
@@ -75,9 +68,6 @@ class NoteDetailFragment : Fragment() {
                 Snackbar.make(binding.root, "El elemento ya está en favoritos", Snackbar.LENGTH_SHORT).show()
             }
         }
-
-
-
 
     }
 

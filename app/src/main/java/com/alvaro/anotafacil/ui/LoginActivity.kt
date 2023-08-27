@@ -20,7 +20,6 @@ import com.google.firebase.auth.GoogleAuthProvider
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding
-
     private lateinit var firebaseAuth: FirebaseAuth
     private lateinit var googleLauncher: ActivityResultLauncher<Intent>
 
@@ -31,7 +30,6 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         firebaseAuth = FirebaseAuth.getInstance()
-        //firebaseAuth = Firebase.aut
 
         googleLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             if (result.resultCode == RESULT_OK) {
